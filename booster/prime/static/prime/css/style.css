@@ -1,0 +1,299 @@
+.main_logo{
+    background-image: url("../images/main_prime_logo.png");
+    margin-top: 40px;
+}
+.header_logo{
+    background-image: url("../images/header_prime.png");
+    background-size: 100% 100%;
+}
+.phone_pad{
+    font-family: "Helvetica";
+    text-align: top;
+    padding-bottom: 20px;
+    padding-left: 75px;
+    padding-right:0px;
+    padding-top:0px;
+    margin:0px;
+    color: #ffc900;
+    font-weight: 140;
+}
+.text_pad{
+    font-family: "Helvetica";
+    padding-left: 110px;
+    color: #ffc900;
+    font-weight: 140;
+    text-align: top;
+}
+.vozvrat_pad{
+    font-family: "Helvetica";
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+.button1_pad{
+    background-color: #ffc900;
+    text-align: center;
+    font-size: 24px;
+
+    border-radius: 5%;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    height: 80px;
+    width: 350px;
+}
+.button1_pad:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+}
+.select_css{
+    width: 335px;
+    height: 60px;
+    border-radius: 2%;
+    margin-left: 10px;
+    background-color: #3f3f44;
+    border: #3f3f44;
+    padding-left: 100px;
+    color: #757575;
+    font-size: medium;
+}
+.buttons-css{
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    width: 135px;
+    background-color: #3f3f44;
+    border: #3f3f44;
+    text-overflow: ellipsis;
+    color: white;
+    font-size: medium;
+}
+.button-submit{
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    width: 335px;
+    height: 59.5px;
+    background-color: #ffc900;
+    border: #3f3f44;
+    text-overflow: ellipsis;
+}
+.button-submit:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+}
+.button-width{
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    width: 485px;
+    background-color: #3f3f44;
+    border: #3f3f44;
+    font-size: medium;
+}
+
+.href-css{
+    font-family: "Helvetica";
+    color: #ffc900;
+    font-weight: 150;
+    font-size: large;
+}
+.main-button-css{
+    height: 100px;
+    width: 350px;
+    background-image: url('../images/main_button_img.png');
+    background-size:100% 100%;
+    padding: 36px 16px;
+    border: #3f3f44;
+}
+.main-button-css:hover{
+    cursor:pointer;
+}
+.price_css{
+    color: white;
+    font-family: "Helvetica";
+    font-weight: 120;
+    font-size: large;
+    padding-left: 270px;
+}
+::placeholder {
+   color: #757575;
+}
+.date-time-css{
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    width: 135px;
+    background-color: #3f3f44;
+    border: #3f3f44;
+    text-overflow: ellipsis;
+    color: #757575;
+    font-size: medium;
+    font-family: "Helvetica";
+}
+.order-margin{
+    margin-left: 600px;
+    color: #757575
+}
+.main-pic{
+    margin-top: 20px;
+}
+.machine-pic{
+    padding-top: 0px;
+}
+.oil-pic{
+    margin-top: 0px;
+    margin-left: 8px;
+}
+.clock-pic{
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 180px;
+}
+.main-text{
+    margin-top: 0px;
+    font-size: x-large;
+}
+.machine-text{
+    padding-top: 0px;
+    padding-left: 15px;
+    font-size:x-large;
+}
+.oil-text{
+    padding-top: 0px;
+    padding-left: 15px;
+    font-size: x-large;
+}
+.clock-text{
+    padding-top: 0px;
+    padding-left: 15px;
+    margin-bottom: 200px;
+    font-size: x-large;
+}
+.div-pic{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+.div-pic2{
+    align-items: center;
+    display: flex;
+}
+.main-text{
+    padding-left: 10px;
+    padding-top: 25px;
+    font-size: xx-large;
+}
+.footer-payment{
+    color: #ffc900;
+    font-weight:50;
+}
+.footer-refs{
+    text-decoration: none;
+    color: #ffc900;
+    font-weight:100;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+}
+.footer-refs:hover{
+    text-decoration: underline;
+    color: red;
+}
+.appstore-text{
+    width: 400px;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 30px;
+    color: #ffc900;
+    font-weight:100;
+}
+.footer-ending{
+    color: #ffc900;
+    font-weight:60;
+    text-align:left;
+}
+.div-contact-main{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.div-contact-sub{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid;
+    border-color: #e4e4e4;
+    border-width: 2px;
+}
+.div-card-header{
+    border-bottom: solid;
+    border-color: #e4e4e4;
+    margin-left: 60px;
+    border-width: 2px;
+}
+.div-card-body{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contact-text-slim{
+    display: inline-block;
+    font-family: "Helvetica";
+    font-weight: 200;
+}
+.confirmation-text-slim{
+    display: inline-block;
+    font-family: "Helvetica";
+    font-weight: 200;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+.payment-text-slim{
+    display: inline-block;
+    font-family: "Helvetica";
+    font-weight: 200;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 25px;
+}
+.div-payment-methods{
+    font-family: 'Helvetica';
+    margin-left: 70px;
+    padding-top: 50px;
+}
+.img-visa-wh-pad{
+    padding-left: 80px;
+
+}

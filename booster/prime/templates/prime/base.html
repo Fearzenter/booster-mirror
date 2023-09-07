@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head class="main_logo">
+    <meta charset="UTF-8">
+    <title>Booster-Prime</title>
+    <link type="text/css" href="{% static 'prime/css/style.css' %}" rel="stylesheet">
+    <!--<script type="text/javascript" src="C:\Python\django\booster\booster\prime\static\prime\js\script.js"></script>-->
+    <script src="C:\Python\django\booster\booster\prime\static\prime\js\script.js"></script>
+</head>
+<body style="background-color: #1c1c1c">
+<header style="background-color: #3f3f44">
+    <button onclick="window.location.href = 'http://127.0.0.1:8000/';" class="main-button-css"></button>
+    <h2 class="phone_pad" style="display: inline-block">Позвоните нам: <a href="" class="href-css">+7(928) 490 98-88</a> или напишите</h2>
+    <h2 class="text_pad" style="display: inline-block">Первая в Осетии мобильная АЗС</h2>
+    {% block header %}
+
+    {% endblock header %}
+</header>
+    {% block content %}
+
+    {% endblock content %}
+<footer style="background-color: #3f3f44">
+    <div style="display: flex">
+        <div style="margin-left: 15px">
+            <h3 style="width: 400px;">
+                <a class="footer-refs" href="{% url 'confirmation'%}">Пользовательское соглашение</a><br><br>
+                <a class="footer-refs" href="{% url 'confidence'%}">Политика конфиденциальности</a><br><br>
+                <a class="footer-refs" href="{% url 'paymentMethods'%}">Способы оплаты</a><br><br>
+                <a class="footer-refs" href="{% url 'contacts'%}">Контакты</a><br><br>
+                <a class="footer-refs" href="{% url 'delivery'%}">Доставка</a><br><br>
+            </h3>
+        </div>
+        <div>
+            <h2 class="footer-payment">Способы оплаты</h2>
+            <h4 class="footer-payment">
+                Наличный расчёт: Если товар доставляется курьером, то оплата осуществляется наличными курьеру в руки. При получении товара обязательно
+                проверьте комплектацию товара, наличие гарантийного талона и чека. Банковской картой: Для выбора оплаты товара с помощью банковской карты
+                на соответствующей странице необходимо нажать кнопку «Оплата заказа банковской картой». Оплата происходит через ПАО СБЕРБАНК с
+                использованием Банковских карт
+            </h4>
+            <div style="display: flex">
+                <h4 class="footer-payment" style="margin-top:17px;">следующих платежных систем:</h4>
+                <img style="height: 45px;" src="../../static/prime/images/visa.png">
+            </div>
+
+        </div>
+        <div>
+            <h2 class="appstore-text">Приложения доступны в App Store и Google Play</h2>
+            <a href="https://www.google.com"><img style="border-radius: 5%; margin-left: 60px;" src="../../static/prime/images/appstore.png"></a>
+            <a href="https://www.google.com"><img style="border-radius: 5%" src="../../static/prime/images/googleplay.png"></a>
+        </div>
+    </div>
+    <h4 class="footer-ending">Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК.
+        Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL.
+        В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode
+        для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование.
+        Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам
+        за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии
+        с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl.
+    </h4><br>
+    <h3 class="footer-ending" style="text-align:center;">
+        © 2021 Copyright: <a class="footer-refs" href="https://msofter.ru/">MSofter.com</a>
+    </h3><br>
+
+    {% block footer %}
+    {% endblock footer %}
+</footer>
+</body>
+</html>

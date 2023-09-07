@@ -1,0 +1,86 @@
+{% extends "prime/base.html" %}
+{% block content %}
+<div class="main_logo">
+    <div>
+        <img src="../../static/prime/images/home_booster-logo.png" class="main-pic"/><br>
+        <h1 class="main-text">Мобильная АЗС - это удобно!</h1>
+    </div>
+
+    <div class="div-pic">
+        <div class="div-pic2">
+            <img name="machine_pic" src="../../static/prime/images/home_machine_pic.png" class="machine-pic"/>
+            <h2  class="machine-text" >Быстрая доставка</h2>
+        </div>
+        <div class="div-pic2">
+            <img name="oil_pic"  src="../../static/prime/images/home_oil_pic.png" class="oil-pic"/>
+            <h2  class="oil-text" >Качественное топливо</h2>
+        </div>
+        <div class="div-pic2">
+            <img name="clock_pic"  src="../../static/prime/images/home_clock_pic.png" class="clock-pic"/>
+            <h2 class="clock-text" >Отличный сервис</h2>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<button class="button1_pad">Перейти к заказу</button>
+<form name="estimate_form" method="post" action="{% url 'estimate' %}" onsubmit="return validate_form ( );">
+    {% csrf_token %}
+    <div>
+        <input name="name" type="text" placeholder="Ваше имя" class="buttons-css">
+        <input name="phone_number" type="text" placeholder="Номер телефона" class="buttons-css"><br>
+        <input name="car_model" type="text" placeholder="Модель машины" class="buttons-css">
+        <select name="color" class="select_css">
+            <option style="display: none;">Цвет</option>
+            <option value="Черный">Черный</option>
+            <option value="Серебристый">Серебристый</option>
+            <option value="Белый">Белый</option>
+            <option value="Красный">Красный</option>
+            <option value="Желтый">Желтый</option>
+            <option value="Синий">Синий</option>
+            <option value="Зеленый">Зеленый</option>
+            <option value="Фиолетовый">Фиолетовый</option>
+            <option value="Оранжевый">Оранжевый</option>
+        </select><br>
+        <input name="gos_number" type="text" placeholder="Номер машины" class="buttons-css">
+        <select name="fuel_type" class="select_css">
+            <option style="display: none;">Вид топлива</option>
+                {% for f in fl %}
+                <option>
+                    {{f.type}}
+                </option>
+                {% endfor %}
+        </select><br>
+        <br>
+        <h2 class="price_css">Цена за 1 л</h2>
+    </div>
+    <div>
+        <input name="volume" type="number" placeholder="Объем" class="buttons-css">
+        <input name="price" type="text" placeholder="Сумма (₽)" class="buttons-css"><br>
+        <select name="payment" class="select_css">
+            <option style="display: none;">Способ оплаты</option>
+            <option value="Наличные">Наличные</option>
+            <option value="Банковской картой" >Банковской картой</option>
+            <option value="Перевод">Перевод</option>
+            <option value="QR-код">QR-код</option>
+        </select>
+        <select name="city" class="select_css">
+            <option style="display: none;">Населенный пункт</option>
+            {% for c in ct %}
+                <option>
+                    {{c.name}}
+                </option>
+            {% endfor %}
+        </select><br>
+        <input name="address" type="text" placeholder="Введите адрес" class="button-width"><br>
+        <input name="delivery_time" type="datetime-local" placeholder="Введите время доставки" class="date-time-css" style="display: inline-block">
+        <button type="submit" class="button-submit">Заказать</button><br><br><br><br><br><br>
+    </div>
+</form>
+<form name="estimate_check_form" method="get" action="{% url 'estimate_check' %}" onsubmit="return validate_form ( );">
+            <input name="check" type="text" placeholder="Номер заказа " class="buttons-css">
+            <button type="submit" class="button-submit">Проверить заказ</button>
+</form>
+<iframe src="https://api.mapbox.com/styles/davidmd/cko2oy0ki21bt17qonfsaek91.html?"/>
+    <H1 class="vozvrat_pad">Товар возврату не подлежит!</H1>
+{% endblock content %}

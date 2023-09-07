@@ -1,0 +1,18 @@
+{% extends "prime/base.html" %}
+{% block content %}
+<div class="order-margin">
+    <h1>Ваш заказ</h1>
+    <h2>Имя: {{ name }}</h2><br>
+    <h2>Номер телефона: {{ phone_number }}</h2><br>
+    <h2>Модель авто: {{ car_model }}</h2><br>
+    <h2>Цвет авто: {{ color }}</h2><br>
+    <h2>Номер авто: {{ gos_number }}</h2><br>
+    <h2>Тип топлива: {{ fuel_type }}</h2><br>
+    <h2>Объем топлива:{{ volume }}</h2><br>
+    <h2>Сумма заказа: {{ price }}</h2><br><br>
+    <h2>Способ оплаты: {{ payment }}</h2><br>
+    <h2>Город: {{ city }}</h2><br>
+    <h2>Адрес: {{ address }}</h2><br>
+    <h2>Время доставки :{{ delivery_time }}</h2><br>
+</div>
+{% endblock content %}
